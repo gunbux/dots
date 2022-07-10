@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/: 
+        glob: true
+        relink: true
+        path: config/*
+    # Link if machine does not have nvim
+    ~/.vimrc: 
+        relink: true
+        path: config/nvim/init.vim
+    ~/.ssh/config: ssh_config
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
