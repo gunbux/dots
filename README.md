@@ -26,6 +26,8 @@ my vimrc is a frankenstein vim config with settings taken and modified from [ami
 configs with very sane defaults and settings. I've kept it intentionally in vimscript instead of lua so you
 can use it with both vim and neovim.
 
+on my pi, i'm running the zsh configs taken directly from the default kali linux [configs](https://gitlab.com/kalilinux/packages/kali-defaults/-/blob/kali/master/etc/skel/.zshrc), as a really like the defaults and the tiny one file config.
+
 ## forking this project
 feel free to fork and modify these dotfiles however you want!
 If you are new to dotfiles, I recommend checking out this
