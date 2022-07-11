@@ -7,18 +7,24 @@ To install, just run `./install`. some configs are not provided by default (ssh)
 due to security reasons, feel free to put your own configs to fill out these missing configs.
 
 Here are some details of the setup:
-- editor: `[neovim](https://github.com/neovim/neovim/)`/`[vim](https://github.com/vim/vim)`
-- shell: `[zsh](https://www.zsh.org)`
+- editor: [`neovim`](https://github.com/neovim/neovim/)/[`vim`](https://github.com/vim/vim)
+- shell: [`zsh`](https://www.zsh.org)
 
 ## branches
 there are a couple of branches in this repo, all for different setups.
 - **main**: i run this on most of my main machines, and this is the setup I use the most frequently.
   - OS: Linux
   - Architecture: x86_64/amd64
-- **pi**: i run a raspi with pi-top os, a spinoff of raspi os (debian based armhf os).
+- **pi**: i run a raspi with pi-top 4 case, running pi-top os.
 These are the configs I run on them!
   - OS: [Pi-Top OS](https://www.pi-top.com/resources/download-os)
   - Architecture: armhf
+
+## configs and inspiration
+my vimrc is a frankenstein vim config with settings taken and modified from [amix](https://github.com/amix/vimrc),
+[brodie](https://github.com/BrodieRobertson/dotfiles), and [chris@machine](https://www.youtube.com/watch?v=gZCXaF-Lmco)'s
+configs with very sane defaults and settings. I've kept it intentionally in vimscript instead of lua so you
+can use it with both vim and neovim.
 
 ## forking this project
 feel free to fork and modify these dotfiles however you want!
