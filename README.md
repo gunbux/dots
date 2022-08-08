@@ -6,6 +6,11 @@ dotfiles are installed using [Dotbot](https://github.com/anishathalye/dotbot).
 To install, just run `./install`. some configs are not provided by default (ssh)
 due to security reasons, feel free to put your own configs to fill out these missing configs.
 
+To set zsh as the default shell, do
+```bash
+chsh -s $(which zsh)
+```
+
 Here are some details of the setup:
 - editor: [`neovim`](https://github.com/neovim/neovim/)/[`vim`](https://github.com/vim/vim)
 - shell: [`zsh`](https://www.zsh.org)
