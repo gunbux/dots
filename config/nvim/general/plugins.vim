@@ -25,6 +25,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'easymotion/vim-easymotion'
+Plug 'wakatime/vim-wakatime'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
