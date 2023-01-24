@@ -6,19 +6,32 @@
 - clean: ['~', '~/.config']
 
 - link:
-#     ~/.config/: 
+#     ~/.config/:
 #         glob: true
 #         relink: true
 #         path: config/*
     # Link if machine does not have nvim
-    ~/.vimrc: 
+    ~/.vimrc:
         relink: true
         path: config/nvim/init.vim
     ~/.config/neofetch: config/neofetch
     ~/.config/nvim:
           relink: true
           path: config/nvim
-    ~/.ssh/config: ssh_config
+    # BSPWM Configs and all the utilities
+    ~/.config/bspwm:
+          glob: true
+          relink: true
+          exclude: [ config/bspwm/themes ]
+          path: config/bspwm/*
+    ~/.config/bspwm/themes/uwu.bash:
+          create: true
+          force: true
+          relink: true
+          path: config/bspwm/themes/uwu.bash
+
+    # SSH config, comment this if you don't wanna reuse personal ssh configs
+    # ~/.ssh/config: ssh_config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
