@@ -16,7 +16,7 @@ use-ui-max = false
 
 ; Interval for volume increase/decrease (in percent points)
 ; Default: 5
-interval = 5
+interval = 2
 
 format-volume = <ramp-volume> <label-volume>
 
@@ -87,6 +87,8 @@ type = internal/backlight
 
 card = ${system.sys_graphics_card}
 
+use-actual-brightness = false
+
 enable-scroll = true
 
 format = <ramp> <label>
@@ -120,7 +122,7 @@ poll-interval = 2
 time-format = %H:%M
 
 format-charging = <animation-charging> <label-charging>
-format-charging-prefix = 
+format-charging-prefix =
 
 format-discharging = <ramp-capacity> <label-discharging>
 
@@ -369,8 +371,8 @@ content-padding = 2
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;	    __________  ______
 ;;	   / ____/ __ \/ ____/
-;;	  / __/ / / / / /_    
-;;	 / /___/ /_/ / __/    
-;;	/_____/\____/_/       
+;;	  / __/ / / / / /_
+;;	 / /___/ /_/ / __/
+;;	/_____/\____/_/
 ;;
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

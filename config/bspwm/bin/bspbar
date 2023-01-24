@@ -50,7 +50,7 @@ launch_bar() {
 		fi
 		touch "$MFILE"
 	fi
-		
+
 	if [[ ! `pidof polybar` ]]; then
 		polybar -q main -c "$DIR"/config &
 	else
