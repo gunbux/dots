@@ -18,7 +18,7 @@ window {
     text-color:                     @foreground;
     border:                  		1px;
     border-color:                  	@selected;
-    border-radius:                  0px;
+    border-radius:                  15px;
     width:                          497px;
     location:                       center;
     anchor:                         center;
@@ -34,13 +34,13 @@ prompt {
 	text-color: 					@foreground;
     border:                  		0px 0px 0px 0px;
     border-color:                  	@selected;
-    border-radius:                  0px;
+    border-radius:                  15px;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
 	str: 							"ﱘ";
-    border-radius:                  0px;
+    border-radius:                  15px;
     background-color:               @selected;
     text-color:                     @background;
     padding:    					6px 10px 6px 10px;
@@ -64,7 +64,7 @@ inputbar {
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px 0px 1px 0px;
-    border-radius:                  0px;
+    border-radius:                  15px;
     border-color:                  	@selected;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
@@ -101,7 +101,7 @@ element {
     text-color:                     @foreground;
     orientation:                    horizontal;
     border:                  		1px;
-    border-radius:                  0px;
+    border-radius:                  15px;
     border-color:                  	@selected;
     padding:                        23.5px 25px 23.5px 25px;
 }

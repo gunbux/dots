@@ -12,8 +12,8 @@
 #         path: config/*
     # Link if machine does not have nvim
     ~/.vimrc:
-        relink: true
-        path: config/nvim/init.vim
+          relink: true
+          path: config/nvim/init.vim
     ~/.config/neofetch: config/neofetch
     ~/.config/nvim:
           relink: true

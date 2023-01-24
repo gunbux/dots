@@ -151,7 +151,6 @@ bspc rule -a stalonetray state=floating manage=off
 
 if [[ $(xrandr --query | grep HDMI) = *connected* ]]; then
   xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-2 --primary --mode 1920x1080 --pos 0x0 --rotate normal
-  sleep 2
 fi
 
 # Kill if already running

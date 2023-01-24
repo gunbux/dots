@@ -21,10 +21,10 @@ override-redirect = false
 bottom = false
 fixed-center = true
 
-width = 100%
+width = 98%
 height = 24
-offset-x = 0
-offset-y = 0
+offset-x = 1%
+offset-y = 0.5%
 
 background = ${color.BACKGROUND}
 foreground = ${color.FOREGROUND}
