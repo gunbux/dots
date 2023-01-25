@@ -7,8 +7,16 @@ To install, just run `./install`. some configs are not provided by default (ssh)
 due to security reasons, feel free to put your own configs to fill out these missing configs.
 
 Here are some details of the setup:
+- wm: [`bspwm`](https://github.com/baskerville/bspwm)
+- compositor: ibhagwan's fork of [`picom`](https://github.com/ibhagwan/picom-ibhagwan-git)
+- bar: [`polybar`](https://github.com/polybar/polybar)
+- launcher: [`rofi`](https://github.com/davatorium/rofi)
 - editor: [`neovim`](https://github.com/neovim/neovim/)/[`vim`](https://github.com/vim/vim)
 - shell: [`zsh`](https://www.zsh.org)
+- terminal: [`alacritty`](https://github.com/alacritty/alacritty)
+- notifications: [`dunst`](https://github.com/dunst-project/dunst)
+- music player: [`ncmpcpp`](https://github.com/ncmpcpp/ncmpcpp)
+
 
 ## branches
 there are a couple of branches in this repo, all for different setups.
@@ -21,6 +29,8 @@ These are the configs I run on them!
   - Architecture: armhf
 
 ## configs and inspiration
+my linux configs are a modification of archcraft's base configs.
+
 my vimrc is a frankenstein vim config with settings taken and modified from [amix](https://github.com/amix/vimrc),
 [brodie](https://github.com/BrodieRobertson/dotfiles), and [chris@machine](https://www.youtube.com/watch?v=gZCXaF-Lmco)'s
 configs with very sane defaults and settings. I've kept it intentionally in vimscript instead of lua so you

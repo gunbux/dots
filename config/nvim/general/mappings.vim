@@ -39,8 +39,11 @@ cnoremap S :%S//gI<Left><Left><Left>
 
 " Bindings for plugins
 "
+
 " Goyo Keybinds
 nnoremap <leader>g :Goyo<CR>
+
+nmap <F11> <plug>MarkdownPreviewToggle
 
 " vimtex compile
 nmap <leader>\ <plug>(vimtex-compile)
