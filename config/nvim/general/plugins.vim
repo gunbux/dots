@@ -30,6 +30,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'github/copilot.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'itchyny/calendar.vim'
 
 call plug#end()
 
