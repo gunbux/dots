@@ -34,7 +34,7 @@ map <leader>c :setlocal formatoptions-=cro<CR>
 map <leader>C :setlocal formatoptions=cro<CR>
 
 " Keybind for replcing text
-cnoremap S :%S//gI<Left><Left><Left>
+noremap S :%S//gI<Left><Left><Left>
 
 
 " Bindings for plugins

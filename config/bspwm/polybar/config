@@ -49,7 +49,7 @@ font-3 = "Iosevka:style=bold:"size=12;3"
 
 modules-left = mod sep bspwm
 modules-center = mpd
-modules-right = volume sep brightness sep network sep battery sep date
+modules-right = cpu sep network sep volume sep battery sep date
 
 separator =
 spacing = 0
@@ -59,10 +59,10 @@ dim-value = 1.0
 wm-name = bspwm
 locale =
 
-tray-position = right
+tray-position =
 tray-detached = false
 tray-maxsize = 16
-tray-transparent = false
+tray-transparent = true
 tray-background = ${color.BACKGROUND}
 tray-offset-x = 0
 tray-offset-y = 0

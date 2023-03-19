@@ -8,6 +8,7 @@ CONFIG="$HOME/.config/bspwm/alacritty/alacritty.yml"
 
 rofi \
 	-show ssh \
+  -no-parse-known-hosts \
 	-modi run,drun,ssh \
 	-no-lazy-grab \
 	-scroll-method 0 \
@@ -16,5 +17,5 @@ rofi \
 	-no-drun-show-actions \
 	-terminal alacritty \
   -ssh-command "alacritty --config-file $CONFIG -e {ssh-client} {host}"\
-	-kb-cancel Alt-F1 \
+	-kb-cancel "Alt-F1,Escape" \
 	-theme "$DIR"/rofi/themes/launcher.rasi
