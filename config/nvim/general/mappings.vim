@@ -24,7 +24,7 @@ nnoremap <leader>h :split<Space>
 nnoremap <leader>v :vsplit<Space>
 
 " Tab completion
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Toggle highlighting
 map <leader>o :setlocal nohlsearch<CR>
@@ -34,7 +34,7 @@ map <leader>o :setlocal nohlsearch<CR>
 " map <leader>C :setlocal formatoptions=cro<CR>
 
 " Keybind for replcing text
-noremap S :%S//gI<Left><Left><Left>
+" noremap S :%S//gI<Left><Left><Left>
 
 
 " Bindings for plugins
@@ -46,7 +46,7 @@ source ~/.cache/calendar.vim/credentials.vim
 let g:calendar_google_calendar = 1
 
 " Hotkey for Calendar
-map <leader>c :Calendar<CR>
+map <leader>c :Calendar -view=week -split=vertical -position=right<CR>
 
 " Helper Function for integration with calendar
 function! s:prefix_zero(num) abort
@@ -78,7 +78,7 @@ function! DiaryDay(day, month, year, week, dir, wnum) abort
   call vimwiki#diary#make_note(a:wnum, 0, link)
 endfunction
 
-autocmd FileType calendar nmap <buffer> <CR> :call DiaryDay(b:calendar.day().get_day(), b:calendar.day().get_month(), b:calendar.day().get_year(), b:calendar.day().week(), "V", v:count1)<CR>
+autocmd FileType calendar nmap <leader><buffer> <CR> :call DiaryDay(b:calendar.day().get_day(), b:calendar.day().get_month(), b:calendar.day().get_year(), b:calendar.day().week(), "V", v:count1)<CR>
 
 " Goyo Keybinds
 nnoremap <leader>g :Goyo<CR>
