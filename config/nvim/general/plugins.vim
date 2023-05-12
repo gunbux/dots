@@ -31,6 +31,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'github/copilot.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'itchyny/calendar.vim'
+Plug 'wuelnerdotexe/vim-astro'
 
 call plug#end()
 

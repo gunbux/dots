@@ -48,7 +48,7 @@ ALTWHITE="$color15"
 
 ## Bspwm appearance
 CURRENT_BORDER='1'
-CURRENT_GAP='10'
+CURRENT_GAP='3'
 CURRENT_SRATIO='0.50'
 
 ## Configurations --------------------------------------------#
@@ -188,6 +188,9 @@ feh --no-fehbg --bg-fill "$CURRENT_WALLPAPER"
 
 # Start mpd
 exec mpd &
+
+# Start syncthing
+exec syncthing &
 
 # Start bspwm scripts
 bspcolors

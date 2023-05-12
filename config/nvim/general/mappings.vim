@@ -39,6 +39,16 @@ map <leader>o :setlocal nohlsearch<CR>
 
 " Bindings for plugins
 
+" Vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+map  <C-Space> :VimwikiIndex<CR>
+
+" Copilot
+imap <silent><script><expr> <C-Space> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
+
 " Vimwiki Related Keybinds
 
 " Enable GCal
@@ -46,7 +56,7 @@ source ~/.cache/calendar.vim/credentials.vim
 let g:calendar_google_calendar = 1
 
 " Hotkey for Calendar
-map <leader>c :Calendar -view=week -split=vertical -position=right<CR>
+map <leader>c :Calendar -view=days -split=vertical -position=right<CR>
 
 " Helper Function for integration with calendar
 function! s:prefix_zero(num) abort
