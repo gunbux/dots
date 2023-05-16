@@ -32,6 +32,9 @@ Plug 'github/copilot.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'itchyny/calendar.vim'
 Plug 'wuelnerdotexe/vim-astro'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
