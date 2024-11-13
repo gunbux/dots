@@ -1,0 +1,22 @@
+# vim: syntax=bash
+
+# Setting up mutt identity
+set realname = "Lam Chun Yu"
+set from = "mail@chunyu.sh"
+
+# IMAP / SMTP password.
+set my_password = `gpg --batch -q --decrypt -r mail@chunyu.sh ~/.mutt/password.gpg`
+set imap_user = "mail@chunyu.sh"
+set imap_pass = $my_password
+
+# Point mutt to whatever SMTP server you're using.
+set smtp_user = "mail@chunyu.sh"
+set smtp_url = "smtp://$smtp_user@mail.chunyu.sh:587"
+set smtp_pass = $my_password
+
+# Point mutt to whatever IMAP server you're using.
+set folder = "imaps://mail.chunyu.sh:993"
+set spoolfile = "+INBOX"
+set record = +Sent
+set trash = +Trash
+set postponed = +Drafts

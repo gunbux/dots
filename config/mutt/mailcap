@@ -1,0 +1,2 @@
+# Do everything in our damn power to render HTML in mutt.
+text/html; lynx -dump -width ${COLUMNS:-80} %s; nametemplate=%s.html; copiousoutput

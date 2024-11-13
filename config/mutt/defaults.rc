@@ -1,0 +1,75 @@
+# vim: syntax=bash
+#
+# The default settings for the mailer.
+
+# Don't move to the next message once you reach the end of a message.
+set pager_stop
+
+# Sort messages with the most recently received starting at the top.
+set sort = "reverse-threads"
+set sort_aux = "last-date-received"
+
+# Allow editing headers when composing a message.
+set edit_headers
+
+# Obviously
+set editor = "vim"
+
+# Remember to `mkdir -p ~/.mutt/hcache` first:
+set header_cache = "~/.mutt/hcache"
+set message_cachedir = "~/.mutt/mcache"
+
+###############
+# Pager settings
+#
+ignore *
+unignore From: Date: To: Cc: Subject: Reply-To: List-ID: Message-ID: In-Reply-To:
+hdr_order From: Date: To: Cc: Subject: Reply-To: List-ID: Message-ID: In-Reply-To:
+
+# Prefer plain text to html.
+# However, for brain dead clients that bundle attachments inside a
+# multipart/alternative, prefer that alternative.
+alternative_order multipart/mixed multipart/related text/plain
+
+# Consult mime.types for determining types of these attachments
+mime_lookup application/octet-stream
+
+# This requires a ~/.mailcap entry with the copiousoutput flag, such as:
+# text/html; lynx -dump -width ${COLUMNS:-80} %s; nametemplate=%s.html; copiousoutput
+auto_view text/html
+
+set mime_type_query_command = "xdg-mime query filetype"
+
+# lbdb is a versatile contact query tool.
+# Invoke via ctrl-t in an address prompt
+set query_command = "/usr/bin/lbdbq"
+
+# Set the format of a message in the index.
+#
+# See http://www.mutt.org/doc/manual/#index-format for how to reformat it to
+# your preference.
+set index_format = " %Z %{%b %d} %-15.15L (%?l?%4l&%4c?) %s"
+
+# Skip the host name part of the $hostname variable when adding the domain part
+# to addresses.
+set hidden_host = yes
+
+# Make the envelope sender the same as the From: address.
+set use_envelope_from = yes
+
+# Always set the From: field (obviously).
+set use_from = yes
+
+# Have mutt set a User-Agent header, specifying the version of mutt.
+set user_agent = yes
+
+# If no subject is specified, ask to abort but default to no.
+set abort_nosubject = ask-no
+
+# Just don't even bother -- tmux will tell us when a new message has arrived.
+set new_mail_command=""
+
+# Set timeout to something reasonable so that we don't send IMAP NOOPs every
+# time we give any input to mutt.
+set timeout = 60
+set imap_keepalive = 30

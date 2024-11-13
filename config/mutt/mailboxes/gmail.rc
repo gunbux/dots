@@ -1,0 +1,29 @@
+# vim: syntax=bash
+
+# Setting up mutt identity
+set realname = "Chun Yu"
+set from = "lamchunyu00@gmail.com"
+
+set my_password = "`gpg --batch -q --decrypt -r lamchunyu00@gmail.com ~/.mutt/gmail_password.gpg`"
+set imap_user = "lamchunyu00@gmail.com"
+set imap_pass = $my_password
+set smtp_user = "lamchunyu00@gmail.com"
+set smtp_url = "smtp://$smtp_user@smtp.gmail.com:587/"
+set smtp_pass = $my_password
+
+set folder = "imaps://$imap_user@imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Drafts"
+set record = "+[Gmail]/Sent"
+set trash = "+[Gmail]/Trash"
+
+# Be sure to `mkdir -p` the following paths
+set header_cache =~/.mutt/gmail/cache/headers
+set message_cachedir =~/.mutt/gmail/cache/bodies
+set certificate_file =~/.mutt/gmail/certificates
+
+set move = no
+set imap_keepalive = 900
+
+set sort = reverse-threads
+set sort_aux = last-date-received

@@ -1,0 +1,24 @@
+#
+# The main .muttrc file.
+#
+# Taken in part from
+# https://github.com/Byte-Lab/personal_configs
+#
+
+# Default settings:
+source "/home/chun/dotnix/config/mutt/defaults.rc"
+
+# Mailbox (including identity) config setup:
+source "/home/chun/dotnix/config/mutt/mailbox.rc"
+
+# Sidebar config:
+source "/home/chun/dotnix/config/mutt/sidebar.rc"
+
+# Manual bindings:
+source "/home/chun/dotnix/config/mutt/keybindings.rc"
+
+# Colors:
+source "/home/chun/dotnix/config/mutt/colors.rc"
+
+# Encryption:
+source "/home/chun/dotnix/config/mutt/encryption.rc"

@@ -1,0 +1,15 @@
+# vim: syntax=bash
+#
+# The settings for encrypting emails
+
+#source "$PWD/gpg.rc"
+
+#set pgp_use_gpg_agent=yes
+#set pgp_sign_as="$GPG_USER_ID"
+#set pgp_timeout=3600
+#set crypt_autosign=yes
+#set crypt_replyencrypt=yes
+
+#send-hook "~f \"$from\"" set pgp_sign_as="$GPG_USER_ID"
+#bind compose p pgp-menu
+#macro compose Y pfy "used to mail without the GPG encryption"

@@ -1,0 +1,26 @@
+# vim: syntax=bash
+# Setting up mutt identity
+
+# Automatically pull all mailboxes from IMAP.
+set imap_check_subscribed
+
+set folder = "imaps://$MUTT_IMAP_URL/"
+set spoolfile = "+INBOX"
+
+# Don't set the record folder, Gmail auto-stores in Sent Mail.
+unset record
+
+# Gmail uses Archive.
+unset trash
+
+# msmtp is a solid SMTP client.
+# mutt also has built-in SMTP, or you can use an MTA like exim4 or postfix.
+set sendmail = "/usr/bin/msmtp"
+
+# TLS all the way
+set ssl_force_tls=yes
+set ssl_starttls=yes
+
+# Source the mailbox we're using at the moment.
+source "/home/chun/dotnix/config/mutt/mailboxes/$MAILBOX.rc"
+

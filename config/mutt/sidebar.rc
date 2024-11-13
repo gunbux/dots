@@ -1,0 +1,29 @@
+# vim: syntax=bash
+#
+# NeoMutt sidebar configuration
+
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S "
+
+# Checks for mail stats (read, unread, etc) in the sidebar. This is pretty
+# performance intensive, so we stick with a longer interval for checking.
+#set mail_check_stats
+#set mail_check_stats_interval = 60
+set mail_check = 6000
+unset mail_check_recent
+
+# Alphabetic sorting.
+set sidebar_sort_method = "alpha"
+
+# Default is 30, this makes it look just a bit nicer.
+set sidebar_width = 35
+
+# Sidebar key bindings:
+bind index,pager . sidebar-next
+bind index,pager , sidebar-prev
+bind index,pager \' sidebar-open
+
+# Colors:
+color sidebar_divider blue blue
+color sidebar_spoolfile green green
+color sidebar_highlight default color32
